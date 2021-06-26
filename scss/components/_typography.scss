@@ -31,6 +31,22 @@
   margin: 0.25rem 0;
 }
 
+.paragraph-bold {
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  word-spacing: 1px;
+  letter-spacing: -0.25px;
+}
+
+.color-black {
+  transition: all 0.2s;
+  color: var(--color-black-cinder);
+  &:hover {
+    color: var(--color-purple);
+  }
+}
+
 .inactive-text {
   color: var(--color-regent-grey);
 }

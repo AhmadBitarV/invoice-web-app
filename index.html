@@ -15,6 +15,8 @@
   </head>
 
   <body>
+    <!------------------------ Header  ------------------------>
+
     <header class="header">
       <div class="logo">
         <svg class="logo__image">
@@ -39,6 +41,7 @@
     </header>
 
     <div class="content">
+      <!------------------------ Menu  ------------------------>
       <ul class="menu">
         <li class="menu__item">
           <h2 class="H1">Invoices</h2>
@@ -46,7 +49,25 @@
         </li>
 
         <li class="menu__item filter">
-          <span class="filter__text">Filter by status </span>
+          <span class="filter__text paragraph-bold">Filter by status </span>
+          <div class="dropbox">
+            <label class="dropbox__content paragraph-bold color-black"
+              >Draft
+              <input type="checkbox" checked="checked" />
+              <span class="dropbox__checkmark"></span>
+            </label>
+            <label class="dropbox__content paragraph-bold color-black"
+              >Pending
+              <input type="checkbox" />
+              <span class="dropbox__checkmark"></span>
+            </label>
+            <label class="dropbox__content paragraph-bold color-black"
+              >Paid
+              <input type="checkbox" />
+              <span class="dropbox__checkmark"></span>
+            </label>
+          </div>
+
           <div class="filter__icon-container">
             <svg class="filter__icon">
               <use xlink:href="assets/sprite.svg#icon-icon-arrow-down"></use>
@@ -66,6 +87,7 @@
         </li>
       </ul>
 
+      <!------------------------ Illustration Empty  ------------------------>
       <div class="illustration-empty">
         <div class="illustration-empty__icon-container">
           <svg class="illustration-empty__icon">

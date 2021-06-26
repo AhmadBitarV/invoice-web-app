@@ -106,6 +106,22 @@
   margin: 0.25rem 0;
 }
 
+.paragraph-bold {
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  word-spacing: 1px;
+  letter-spacing: -0.25px;
+}
+
+.color-black {
+  transition: all 0.2s;
+  color: var(--color-black-cinder);
+}
+.color-black:hover {
+  color: var(--color-purple);
+}
+
 .inactive-text {
   color: var(--color-regent-grey);
 }
@@ -130,14 +146,15 @@
   align-items: center;
   box-sizing: border-box;
   cursor: pointer;
-  transition: 0.5s;
 }
 .filter:hover {
-  color: var(--color-blue-dark-2);
+  visibility: visible;
 }
 .filter__text {
-  font-weight: 600;
-  font-size: 12px;
+  transition: 0.5s;
+}
+.filter__text:hover {
+  color: var(--color-blue-dark-2);
 }
 .filter__icon-container {
   width: 1rem;
@@ -154,6 +171,45 @@
   position: absolute;
   bottom: 0;
   left: 0;
+}
+
+.dropbox {
+  visibility: hidden;
+  position: absolute;
+  left: -3.5rem;
+  top: 5rem;
+  width: 19.2rem;
+  height: 12.8rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px gray;
+  background: white;
+  z-index: 5;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.dropbox__content {
+  width: 10rem;
+  height: 1.6rem;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin-left: 2rem;
+  cursor: pointer;
+  position: relative;
+}
+.dropbox input {
+  display: none;
+}
+.dropbox__checkmark {
+  height: 1.6rem;
+  width: 1.6rem;
+  margin-right: 1.2rem;
+  background-color: var(--color-white-link-Water);
+  border: 1.5px solid var(--color-purple);
+  border-radius: 3px;
 }
 
 .header {
@@ -317,44 +373,6 @@ body {
   font-size: 1.1rem;
   line-height: 1.8rem;
   letter-spacing: -0.23px;
-}
-
-.dropbox {
-  width: 19.2rem;
-  height: 12.8rem;
-  border-radius: 1rem;
-  box-shadow: 0 0 10px gray;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  font-family: sans-serif;
-  font-size: 1.2rem;
-  line-height: 1.5rem;
-  letter-spacing: -0.25px;
-  font-weight: 500;
-}
-.dropbox__content {
-  width: 10rem;
-  height: 1.6rem;
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: row-reverse;
-  align-items: center;
-  margin-left: 2rem;
-  cursor: pointer;
-  position: relative;
-}
-.dropbox input {
-  display: none;
-}
-.dropbox__checkmark {
-  height: 1.6rem;
-  width: 1.6rem;
-  margin-right: 1.2rem;
-  background-color: var(--color-grey-light);
-  border: 1.5px solid var(--color-primary-dark);
-  border-radius: 3px;
 }
 
 /*# sourceMappingURL=styles.css.map */

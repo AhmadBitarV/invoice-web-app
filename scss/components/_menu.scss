@@ -22,15 +22,17 @@
   align-items: center;
   box-sizing: border-box;
   cursor: pointer;
-  transition: 0.5s;
 
   &:hover {
-    color: var(--color-blue-dark-2);
+    visibility: visible;
   }
 
   &__text {
-    font-weight: 600;
-    font-size: 12px;
+    transition: 0.5s;
+  }
+
+  &__text:hover {
+    color: var(--color-blue-dark-2);
   }
 
   &__icon-container {
@@ -50,5 +52,48 @@
     position: absolute;
     bottom: 0;
     left: 0;
+  }
+}
+
+.dropbox {
+  visibility: hidden;
+  position: absolute;
+  left: -3.5rem;
+  top: 5rem;
+  width: 19.2rem;
+  height: 12.8rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px gray;
+  background: white;
+  z-index: 5;
+
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  &__content {
+    width: 10rem;
+    height: 1.6rem;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-left: 2rem;
+    cursor: pointer;
+    position: relative;
+  }
+
+  & input {
+    display: none;
+  }
+
+  &__checkmark {
+    height: 1.6rem;
+    width: 1.6rem;
+    margin-right: 1.2rem;
+    background-color: var(--color-white-link-Water);
+    border: 1.5px solid var(--color-purple);
+    border-radius: 3px;
   }
 }
