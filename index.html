@@ -4,13 +4,81 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
     <link href="./scss/styles.css" rel="stylesheet" />
-
     <title>Invoice App</title>
   </head>
-  <body></body>
+
+  <body>
+    <header class="header">
+      <div class="logo">
+        <svg class="logo__image">
+          <use xlink:href="assets/sprite.svg#icon-logo"></use>
+        </svg>
+      </div>
+
+      <ul class="profile">
+        <li class="profile__setting">
+          <svg class="profile__mode">
+            <use xlink:href="assets/sprite.svg#icon-icon-moon"></use>
+          </svg>
+        </li>
+        <li class="profile__setting">
+          <img
+            src="./assets/image-avatar.jpg"
+            alt="Avatar"
+            class="profile__avatar"
+          />
+        </li>
+      </ul>
+    </header>
+
+    <div class="content">
+      <ul class="menu">
+        <li class="menu__item">
+          <h2 class="H1">Invoices</h2>
+          <p class="paragraph inactive-text">No invoices</p>
+        </li>
+
+        <li class="menu__item filter">
+          <span class="filter__text">Filter by status </span>
+          <div class="filter__icon-container">
+            <svg class="filter__icon">
+              <use xlink:href="assets/sprite.svg#icon-icon-arrow-down"></use>
+            </svg>
+          </div>
+        </li>
+
+        <li class="menu__item button-container">
+          <button class="button button--purple">
+            <div class="button__icon-container">
+              <svg class="button--icon">
+                <use xlink:href="assets/sprite.svg#icon-icon-plus"></use>
+              </svg>
+            </div>
+            <span class="button__text">New Invoice</span>
+          </button>
+        </li>
+      </ul>
+
+      <div class="illustration-empty">
+        <div class="illustration-empty__icon-container">
+          <svg class="illustration-empty__icon">
+            <use xlink:href="assets/sprite.svg#icon-illustration-empty"></use>
+          </svg>
+        </div>
+
+        <span class="illustration-empty__heading">There is nothing here</span>
+        <span class="illustration-empty__paragraph paragraph inactive-text">
+          Create an invoice by clicking the <br />
+          <strong>New Invoice</strong> button and get started</span
+        >
+      </div>
+    </div>
+  </body>
 </html>

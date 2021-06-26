@@ -1,25 +1,36 @@
-.counter-box {
-  font-family: sans-serif;
-  flex: 0 0 40%;
-
-  &__title {
-    font-size: 3.2rem;
-    font-weight: 500;
-    line-height: 3.6rem;
-    letter-spacing: -1;
-    color: var(--color-text-light);
-    display: block;
-  }
-
-  &__counter {
-    font-weight: 300;
-    font-size: 1.3rem;
-    line-height: 1.5rem;
-    letter-spacing: -0.25px;
-    color: var(--color-primary-light-2);
-  }
-}
-
 .active {
   color: var(--color-black-text);
+}
+
+.H1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 3.6rem;
+  word-spacing: -1px;
+}
+
+.H2 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.2rem;
+  word-spacing: -0.63px;
+}
+
+.H3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 2.4rem;
+  word-spacing: -0.8px;
+}
+
+.paragraph {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  word-spacing: -0.25px;
+  margin: 0.25rem 0;
+}
+
+.inactive-text {
+  color: var(--color-regent-grey);
 }

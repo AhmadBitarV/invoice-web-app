@@ -1,22 +1,4 @@
 :root {
-  --color-primary-dark: #9277ff;
-  --color-primary-light: #7c5dfa;
-  --color-primary-light-2: #7e88c3;
-
-  --color-blue-dark-1: #1e2139;
-  --color-blue-dark-2: #252945;
-
-  --color-grey-light: #dfe3fa;
-  --color-grey-dark: #888eb0;
-
-  --color-red-light: #ff9797;
-  --color-red-dark: #ec5757;
-
-  --color-white: #f8f8fb;
-  --color-black-text: #141625;
-  --color-text: #0c0e16;
-  --color-text-light: #d8d8d8;
-
   --layer-1: 0;
   --layer-2: 5;
   --later-3: 10;
@@ -26,4 +8,31 @@
   --sidebar-mobile-height: 10rem;
 
   --corner-radius: 2rem;
+
+  //// Purple ////
+  --color-purple: #7c5dfa;
+  --color-purple-mimosa: #9277ff;
+  --color-blue-wild-yonder: #7e88c3;
+
+  //// Blue ////
+  --color-blue-dark: #1e2139;
+  --color-blue-dark-2: #979797;
+
+  --color-blue-dark-lighter: #252945;
+
+  //// Grey + White ////
+  --color-white: #ffffff;
+  --color-white-link-Water: #dfe3fa;
+  --color-white-lilac: #f8f8fb;
+  --color-white-alabaster: #f9fafe;
+  --color-regent-grey: #888eb0;
+  --color-grey-bright: #373b53;
+
+  //// Black ////
+  --color-black-cinder: #0c0e16;
+  --color-black-mirage: #141625;
+
+  //// Red ////
+  --color-red-light: #ff9797;
+  --color-red-dark: #ec5757;
 }
